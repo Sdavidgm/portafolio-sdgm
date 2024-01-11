@@ -4,35 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAFOLIO SDGM</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assest/css/style.css"> 
+    
 </head>
 <body>
-    <header>
-        <H1>SANTIAGO GUAMANQUISPE MENDOZA</H1>
-    <P>Ingeniero en Networking, egresado de la Universidad de Guayaquil - Ecuador. Experiencia en diseño de redes de telecomunicaciones, instalación y configuración de equipos. Programador FrontEnd, HTML, CSS, JavaScript.</P>
-      <nav>
-        <ul>
-            <li><a href="#Acerca de mí">Acerca de mí</a></li>
-            <li><a href="#Estudios y certificaciones">Estudios y certificaciones</a></li>
-            <li><a href="#Habilidades">Habilidades</a></li>
-        </ul>
+    <header class="header">
+       
+      <nav class="nav container">
+        
+        <div class="nav-menu">
+            <button class="btn-close" type="button" aria-label="close menu">
+                <i class='bx bx-x' ></i>
+            </button>
+            <ul class="lista">
+                <li class="item-lista"><a class="lista-link" href="#Inicio">Inicio</a></li>
+                <li class="item-lista"><a class="lista-link" href="#Acerca de mí">Acerca de mí</a></li>
+                <li class="item-lista"><a class="lista-link" href="#Estudios">Estudios</a></li>
+                <li class="item-lista"><a class="lista-link" href="#Habilidades">Habilidades</a></li>
+                <li class="item-lista"><a class="lista-link" href="#Contacto">Contacto</a></li>
+        </div>
+        
+        <div class="action">
+            <button class="btn-menu" type="button" aria-label="show menu">
+            <i class='bx bx-menu'></i></button>
+        </div>
+
       </nav>  
+     
     </header>
     
-    <main>
-        <section id="Acerca de mí">
-            <H2>Acerca de mí</H2>
-            <p>Laboro en el mercado de tecnología de la comunicación desde hace 15 años, en este tiempo he adquirido conocimientos en instalación de sistema operativos, reparación y configuración de PC's, instalación de sistema de video vigilacia. Programación básica en .net, HTML, CSS. actualmente relaizando un curso en Acedemlo para adquirir mas conomiciemientos en estos lenguajes.  </p>
-        </section>
-        <section id="Estudios y certificaciones">
-            <h2>Estudios y certificaciones</h2>
-            <h3>Ingeniera en Networking</h3>
-            <p>Universidad de Guayaquil 2013 - 2018</p>
-            <h3>Programador FullStack</h3>
-            <p>ACADEMLO 2023 - actualmente</p>
-        </section>
-        <section id="Habilidades">
-            <H2>Habilidades</H2>
-            <h3>Tecnologías</h3>
+    <main class='main'>
+        <section id="Inicio" class='hero'>
+          <div>
+            <img class="hero-img" src='assest/img/media_hero.png' alt="logo_hero">
+          </div>
+            <div class='container'>
+              <h1 class='hero-title'>Santiago Guamanquispe</h1>
+              <p class='hero-description'>Desarrollador Front-end</p>            
+            </div>
+            
+          </section>
+
+        <section id="Acerca de mí" class='section about'>
+            <h2 class='section-title'>Acerca de mí</h2>
+            <div class='container'>
+              <div class='about-info'>
+                <p>Ingeniero en Networking, egresado de la Universidad de Guayaquil - Ecuador. Experiencia en diseño de redes de telecomunicaciones, instalación y configuración de equipos. Programador FrontEnd, HTML, CSS, JavaScript. </p>                
+                </div>
+              </div>
+              
+          </section> 
+          
+          <section id="Estudios" class='section-study'>
+            <h2 class='section-title'>Estudios</h2>
+            <div class='container'>
+              <div class='study-info'>
+                <h3>Ingeniera en Networking</h3>
+                <p>Universidad de Guayaquil 2013 - 2018</p>
+                <h3>Programador FullStack</h3>
+                <p>ACADEMLO 2023 - actualmente</p>
+
+                </div>
+              </div>
+              
+          </section> 
+          <section id="Habilidades" class='section-skill'>
+            <h2 class='section-title'>Habilidades</h2>
+            <div class='container'>
+              <div class='skill-info'>
+                <h3>Tecnologías</h3>
             <ul>
                 <li><p>Cisco 1</p></li>
                 <li><p>Windows Server 2002</p></li>
@@ -47,7 +88,15 @@
                 <li><p><p>Comunicación</p></li>
                 <li><p>Proactivo</p></li>  
             </ul>
-        </section>
+
+
+                </div>
+              </div>
+              
+          </section> 
+
+
+       
     </main>
   <footer>
     <p>&copy; 2024 MI PORTAFOLIO</p>
