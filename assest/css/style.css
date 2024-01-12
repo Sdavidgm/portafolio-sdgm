@@ -336,3 +336,110 @@ button.btn-menu {
   height: auto;
   color: tomato;
 }
+
+/* Testimonials */
+.swiper {
+  padding: 1.5em;
+}
+
+.swiper .card {
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.swiper .swiper-slide {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  opacity: 0.2;
+  background: var(--bg-alt);
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.swiper .swiper-nav-wrapper {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  padding-top: 3em;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next,
+.swiper .swiper-nav-wrapper .swiper-button-prev {
+  top: 0;
+  top: auto;
+  left: auto;
+  right: auto;
+  position: relative !important;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next:after,
+.swiper .swiper-nav-wrapper .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-next,
+.swiper .swiper-nav-wrapper .swiper-button-prev,
+.swiper .swiper-nav-wrapper .swiper-container-rtl .swiper-button-prev,
+.swiper .swiper-nav-wrapper .swiper-container-rtl .swiper-button-next {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper .swiper-nav-wrapper .swiper-button-prev i,
+.swiper .swiper-nav-wrapper .swiper-button-next i {
+  font-size: 38px;
+  color: var(--txt-body);
+}
+
+.swiper-pagination {
+  margin: 0;
+  padding: 0;
+  position: relative !important;
+  display: block;
+  width: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+  background: var(--txt-body) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--primary-color) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  padding: 0 1.5em;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.5);
+}
