@@ -24,7 +24,8 @@
                 <li class="item-lista"><a class="lista-link" href="#Acerca de mí">Acerca de mí</a></li>
                 <li class="item-lista"><a class="lista-link" href="#skills">Habilidades</a></li>
                 <li class="item-lista"><a class="lista-link" href="#testimonials">Testimonios</a></li>
-                <li class="item-lista"><a class="lista-link" href="#Contacto">Contacto</a></li>
+                <li class="item-lista"><a class="lista-link" href="#portfolio">Proyectos</a></li>
+                <li class="item-lista"><a class="lista-link" href="#contacto">Contacto</a></li>
         </div>
         
         <div class="action">
@@ -43,7 +44,7 @@
                 <img class="hero-img" src='assest/img/foto-mia2_hero.png' alt="logo_hero">
               </div>
               <h1 class="hero-title">Santiago Guamanquispe</h1>
-              <h2 class="hero-description">Desarrollador Front-end</h2>
+              <h2 class="hero-description">Desarrollador <span></span></h2>
           
               <div class='redes'>
                 <a class="item-redes" href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -60,7 +61,7 @@
               <div class='about-info'>
                 <p><span>Hola, Soy Santiago Guamanquispe,</span> Ingeniero en Networking, egresado de la Universidad de Guayaquil - Ecuador. Experiencia en diseño de redes de telecomunicaciones, instalación y configuración de equipos. Programador FrontEnd, HTML, CSS, JavaScript. </p>                
                 
-                               
+                   <!-- intereses  -->            
                   <div class="col">
                       <h3>Intereses</h3>
                       <div class="contenedor-intereses">
@@ -98,13 +99,14 @@
                   </div>
               
               <button>
-                  Descargar CV <i class="fa-solid fa-download"></i>
+                <a href="ruta/archivo.pdf" download>Descargar CV <i class="fa-solid fa-download"></i></a>
+                  
                   <span class="overlay"></span>
               </button>
             </div>
           </div>
       </section>
-              
+           <!-- Habilidades blandas -->   
        <section id="skills" class='section skills'>
             <h2 class='section-title'>Mis Habilidades</h2>
             <div class='container'>
@@ -158,16 +160,16 @@
           </section>
           <section id='testimonials' class='section testimonials'>
             <h2 class='section-title'>Testimonios</h2>
-    
+            <!-- tarjetas de slider  -->
             <div class='container'>
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class='card'>
                       <div class='card-img'>
-                        <!-- <img src='assest/img/Stefanny_Guzman.jpg' alt='profile'>-->
+                        <img src='assest/img/Stefanny_Guzman.jpg' alt='profile'>
                       </div>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>Un compañero de labores que comunica todas las ideas de una buena manera.</p>
                       <h3>Stefanny Guzman</h3>
                     </div>
                   </div>
@@ -175,9 +177,9 @@
                   <div class="swiper-slide">
                     <div class='card'>
                       <div class='card-img'>
-                        <!-- <img src='assest/img/Jonathan_Cevallos.jpg' alt='profile'>-->
+                        <img src='assest/img/Jonathan_Cevallos.jpg' alt='profile'>
                       </div>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>Es una persona proactiva, siempre pendiente de sus compañeros.</p>
                       <h3>Jonathan Cevallos</h3>
                     </div>
                   </div>
@@ -185,9 +187,9 @@
                   <div class="swiper-slide">
                     <div class='card'>
                       <div class='card-img'>
-                        <!-- <img src='assest/img/Jorge_Valencia.jpg' alt='profile'>-->
+                        <img src='assest/img/Jorge_Valencia.jpg' alt='profile'>
                       </div>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>Una grata experiencia trabajar con el, tiene buenas ideas.</p>
                       <h3>Jorge Valencia</h3>
                     </div>
                   </div>
@@ -205,9 +207,79 @@
               </div>
             </div>
           </section>
+
+          <section id="portfolio" class="portfolio">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="container">
+                
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="assest/img/app_and.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="assest/img/planificacion_app.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Responsivo </h3>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="assest/img/app_mobile.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>JavaScript, CSS</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="assest/img/app_banca.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño intuitivo</h3>
+                            <p>JavaScript, CSS</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contacto">
+          <h2 class="section-title">Contacto</h2>
+          <div class="contenido-seccion">
+              
+              <div class="fila">
+                  <!-- Formulario -->
+                  <div class="col">
+                      <input type="text" placeholder="Tú Nombre">
+                      <input type="text" placeholder="Número telefónico">
+                      <input type="text" placeholder="Dirección de correo">
+                      <input type="text" placeholder="Tema">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                      <button>
+                          Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                          <span class="overlay"></span>
+                      </button>
+                  </div>
+                  
        
     </main>
-    
+    <!-- Span efecto de letras  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed('.hero-description span', {
+        strings: [
+          '<b>Front-end</b>', '<b>Back-end</b>', '<b>Full-stack</b>'
+        ],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+        cursorChar: '|',
+      })
+    </script>
+    <!-- Slider de testimonios  -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js'></script>
     <script>
       const swiper = new Swiper('.swiper', {
@@ -242,10 +314,19 @@
 
     <script src="assest/js/index.js"></script>
 
-  <footer>
-    <p>&copy; 2024 MI PORTAFOLIO</p>
-    <P>Desarrollado por Santiago Guamanquispe</P>
-  </footer> 
+    <footer>
+      <a href="#Inicio" class="arriba">
+          <i class="fa-solid fa-angles-up"></i>
+      </a>
+      
+      <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <h2 class="footer-description">&copy; 2024 Portafolio SDGM </h2>
+  </footer>
     
 </body>
 </html>
