@@ -224,7 +224,7 @@ button.btn-menu {
     margin-bottom: 20px;
   }
   .about-info p span{
-    color: cyan;
+    color: yellowgreen;
     font-weight: bold;
   }
 
@@ -253,11 +253,9 @@ button.btn-menu {
     flex-direction:column;
     align-items: center;
     justify-content: center;
-   transition: .3s;
+    transition: .3s;
 }
-.contenedor-intereses .interes:hover{
-    background-color: #1CB698;
-}
+
 .interes i{
     font-size: 20px;
     margin-bottom: 10px;
@@ -328,10 +326,12 @@ button.btn-menu {
   margin: 0;
 }
 
-.skill-item {
+.skills-soft {
+  
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 10px;
 }
 
